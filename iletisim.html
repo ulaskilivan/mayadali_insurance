@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim | Mayadalı Sigorta</title>
+  <meta name="description" content="Mayadalı Sigorta iletişim ve teklif formu sayfası. Araç, sağlık, konut, DASK, iş yeri ve seyahat sigortası için hızlı teklif alın.">
+  <link rel="canonical" href="https://www.mayadalisigorta.com/iletisim.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="İletişim | Mayadalı Sigorta">
+  <meta property="og:description" content="Mayadalı Sigorta iletişim ve teklif formu sayfası.">
+  <meta property="og:url" content="https://www.mayadalisigorta.com/iletisim.html">
+  <meta property="og:image" content="https://www.mayadalisigorta.com/kaynak/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İletişim | Mayadalı Sigorta">
+  <meta name="twitter:description" content="Araç, sağlık, konut, DASK, iş yeri ve seyahat sigortası için hızlı teklif alın.">
+  <meta name="twitter:image" content="https://www.mayadalisigorta.com/kaynak/logo.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "Mayadalı Sigorta",
+      "url": "https://www.mayadalisigorta.com/",
+      "email": "info@mayadalisigorta.com",
+      "telephone": "+90 535 308 68 74",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hatay",
+        "addressCountry": "TR"
+      },
+      "areaServed": "TR",
+      "sameAs": [
+        "https://www.facebook.com/sigortamayadali/"
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="py-5 bg-light-subtle min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <a id="backButton" href="index.html" class="btn btn-outline-secondary btn-sm mb-4"><i class="fa-solid fa-arrow-left me-2"></i>Geri Dön</a>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 p-lg-5 bg-white rounded-4 shadow-sm h-100">
+            <h1 class="fw-bold mb-3 h2">İletişim ve Teklif Formu</h1>
+            <p class="text-muted mb-4">Formu doldurun, ekibimiz en kısa sürede sizinle iletişime geçsin.</p>
+            <form id="offerForm" novalidate>
+              <div class="mb-3">
+                <label for="fullName" class="form-label fw-medium">İsim Soyisim</label>
+                <input id="fullName" name="fullName" type="text" class="form-control form-control-lg" placeholder="Adınız Soyadınız" required>
+              </div>
+              <div class="mb-3">
+                <label for="product" class="form-label fw-medium">İlgilenilen Ürün</label>
+                <select id="product" name="product" class="form-select form-select-lg" required>
+                  <option value="">Seçiniz</option>
+                  <option value="trafik">Trafik Sigortası</option>
+                  <option value="kasko">Kasko Sigortası</option>
+                  <option value="tamamlayici-saglik">Tamamlayıcı Sağlık</option>
+                  <option value="dask">DASK</option>
+                  <option value="konut">Konut Sigortası</option>
+                  <option value="isyeri">İş Yeri Sigortası</option>
+                  <option value="seyahat">Seyahat Sigortası</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-medium">Telefon Numarası</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text phone-prefix">+90</span>
+                  <input id="phone" name="phone" type="tel" class="form-control" placeholder="5XX XXX XX XX" inputmode="numeric" maxlength="13" autocomplete="tel-national" required>
+                </div>
+                <div class="form-text">10 haneli cep telefonu numarası giriniz (5XX XXX XX XX).</div>
+              </div>
+              <div class="mb-4">
+                <label for="note" class="form-label fw-medium">Not</label>
+                <textarea id="note" name="note" class="form-control" rows="4" placeholder="Talebinizi kısaca yazabilirsiniz..."></textarea>
+              </div>
+              <button id="submitBtn" type="submit" class="btn btn-danger btn-lg px-4">
+                <span class="submit-label">Gönder</span>
+                <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 p-lg-5 bg-white rounded-4 shadow-sm h-100">
+            <h5 class="fw-semibold mb-3">İletişim Bilgileri</h5>
+            <p class="mb-2"><i class="fa-solid fa-envelope me-2"></i>info@mayadalisigorta.com</p>
+            <p class="mb-2"><i class="fa-solid fa-phone me-2"></i>+90 535 308 68 74</p>
+            <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i>Hatay/Merkez</p>
+            <hr>
+            <img src="Kaynak/Kurumsal.jpeg" alt="Mayadalı Sigorta Kurumsal" class="img-fluid rounded-4 shadow-sm mt-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <a href="https://wa.me/905353086874" class="desktop-float-btn desktop-float-left float-whatsapp d-none d-lg-inline-flex" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:+905353086874" class="desktop-float-btn desktop-float-right float-call d-none d-lg-inline-flex" aria-label="Hemen Ara"><i class="fa-solid fa-phone"></i></a>
+
+  <div class="mobile-action-bar d-block d-lg-none fixed-bottom">
+    <div class="d-flex">
+      <a href="https://wa.me/905353086874" class="action-btn whatsapp-btn w-50 text-center" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+      <a href="tel:+905353086874" class="action-btn call-btn w-50 text-center"><i class="fa-solid fa-phone me-2"></i>Hemen Ara</a>
+    </div>
+  </div>
+
+  <div id="submitStatusModal" class="submit-status-modal" aria-hidden="true">
+    <div class="submit-status-card">
+      <div id="submitStatusIcon" class="submit-status-icon"></div>
+      <h5 id="submitStatusTitle" class="fw-bold mb-2"></h5>
+      <p id="submitStatusText" class="text-muted mb-4"></p>
+      <button id="submitStatusClose" type="button" class="btn btn-dark px-4">Kapat</button>
+    </div>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
