@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="kaynak/logotek.png">
 </head>
 <body>
   <div class="top-contact-bar d-none d-lg-block">
@@ -81,6 +82,8 @@
             <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-heart-pulse me-2"></i>Sağlık</a>
             <ul class="dropdown-menu shadow-sm border-0">
               <li><a class="dropdown-item" href="tamamlayici-saglik.html"><i class="fa-solid fa-briefcase-medical me-2"></i>Tamamlayıcı Sağlık</a></li>
+              <li><a class="dropdown-item" href="ozel-saglik-sigortasi.html"><i class="fa-solid fa-user-doctor me-2"></i>Özel Sağlık Sigortası</a></li>
+              <li><a class="dropdown-item" href="yabanci-saglik-sigortasi.html"><i class="fa-solid fa-passport me-2"></i>Yabancı Sağlık Sigortası</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -91,10 +94,20 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium active" href="isyeri-sigortasi.html"><i class="fa-solid fa-building-shield me-2"></i>İş Yeri Sigortası</a>
+            <a class="nav-link fw-medium" href="axa-bireysel-emeklilik.html"><i class="fa-solid fa-piggy-bank me-2"></i>AXA BES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="seyahat-sigortasi.html"><i class="fa-solid fa-plane-departure me-2"></i>Seyahat Sigortası</a>
+            <a class="nav-link fw-medium active" href="isyeri-sigortasi.html"><i class="fa-solid fa-building-shield me-2"></i>İş Yeri Sigortası</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-layer-group me-2"></i>Diğer Sigortalar</a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item" href="diger-sigortalar.html#hekim-sorumluluk"><i class="fa-solid fa-user-doctor me-2"></i>Hekim Sorumluluk</a></li>
+              <li><a class="dropdown-item" href="diger-sigortalar.html#ferdi-kaza"><i class="fa-solid fa-user-injured me-2"></i>Ferdi Kaza</a></li>
+              <li><a class="dropdown-item" href="diger-sigortalar.html#hayat-sigortasi"><i class="fa-solid fa-heart me-2"></i>Hayat Sigortası</a></li>
+              <li><a class="dropdown-item" href="diger-sigortalar.html#all-risk"><i class="fa-solid fa-helmet-safety me-2"></i>All Risk</a></li>
+              <li><a class="dropdown-item" href="seyahat-sigortasi.html"><i class="fa-solid fa-plane-departure me-2"></i>Seyahat Sigortası</a></li>
+            </ul>
           </li>
           <li class="nav-item ms-lg-2">
             <a class="btn btn-danger rounded-pill px-4 fw-semibold" href="iletisim.html">Teklif Al</a>
@@ -121,14 +134,24 @@
       <button class="drawer-parent" data-target="drawerSaglik"><i class="fa-solid fa-heart-pulse me-2"></i>Sağlık <i class="fa-solid fa-chevron-down ms-auto"></i></button>
       <ul id="drawerSaglik" class="drawer-submenu">
         <li><a href="tamamlayici-saglik.html"><i class="fa-solid fa-briefcase-medical me-2"></i>Tamamlayıcı Sağlık</a></li>
+        <li><a href="ozel-saglik-sigortasi.html"><i class="fa-solid fa-user-doctor me-2"></i>Özel Sağlık Sigortası</a></li>
+        <li><a href="yabanci-saglik-sigortasi.html"><i class="fa-solid fa-passport me-2"></i>Yabancı Sağlık Sigortası</a></li>
       </ul>
       <button class="drawer-parent" data-target="drawerEv"><i class="fa-solid fa-house-chimney me-2"></i>Ev <i class="fa-solid fa-chevron-down ms-auto"></i></button>
       <ul id="drawerEv" class="drawer-submenu">
         <li><a href="dask.html"><i class="fa-solid fa-house-crack me-2"></i>DASK</a></li>
         <li><a href="konut.html"><i class="fa-solid fa-house me-2"></i>Konut</a></li>
       </ul>
+      <a class="drawer-link" href="axa-bireysel-emeklilik.html"><i class="fa-solid fa-piggy-bank me-2"></i>AXA Bireysel Emeklilik</a>
       <a class="drawer-link" href="isyeri-sigortasi.html"><i class="fa-solid fa-building-shield me-2"></i>İş Yeri Sigortası</a>
-      <a class="drawer-link" href="seyahat-sigortasi.html"><i class="fa-solid fa-plane-departure me-2"></i>Seyahat Sigortası</a>
+      <button class="drawer-parent" data-target="drawerDiger"><i class="fa-solid fa-layer-group me-2"></i>Diğer Sigortalar <i class="fa-solid fa-chevron-down ms-auto"></i></button>
+      <ul id="drawerDiger" class="drawer-submenu">
+        <li><a href="diger-sigortalar.html#hekim-sorumluluk"><i class="fa-solid fa-user-doctor me-2"></i>Hekim Sorumluluk</a></li>
+        <li><a href="diger-sigortalar.html#ferdi-kaza"><i class="fa-solid fa-user-injured me-2"></i>Ferdi Kaza</a></li>
+        <li><a href="diger-sigortalar.html#hayat-sigortasi"><i class="fa-solid fa-heart me-2"></i>Hayat Sigortası</a></li>
+        <li><a href="diger-sigortalar.html#all-risk"><i class="fa-solid fa-helmet-safety me-2"></i>All Risk</a></li>
+        <li><a href="seyahat-sigortasi.html"><i class="fa-solid fa-plane-departure me-2"></i>Seyahat Sigortası</a></li>
+      </ul>
     </nav>
     <div class="drawer-cta">
       <a href="iletisim.html" class="btn btn-danger w-100 fw-semibold py-2">Teklif Al</a>
@@ -314,8 +337,12 @@
           <h6 class="fw-semibold mb-3">Sigorta Türleri</h6>
           <ul class="list-unstyled footer-links">
             <li><a href="tamamlayici-saglik.html">Tamamlayıcı Sağlık</a></li>
+            <li><a href="ozel-saglik-sigortasi.html">Özel Sağlık Sigortası</a></li>
+            <li><a href="yabanci-saglik-sigortasi.html">Yabancı Sağlık Sigortası</a></li>
+            <li><a href="diger-sigortalar.html">Diğer Sigortalar</a></li>
             <li><a href="dask.html">DASK</a></li>
             <li><a href="konut.html">Konut</a></li>
+            <li><a href="axa-bireysel-emeklilik.html">AXA Bireysel Emeklilik</a></li>
             <li><a href="isyeri-sigortasi.html">İş Yeri Sigortası</a></li>
             <li><a href="seyahat-sigortasi.html">Seyahat Sigortası</a></li>
           </ul>
