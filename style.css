@@ -366,7 +366,17 @@ body {
 }
 
 .float-whatsapp {
-  background-color: var(--green);
+  background-color: #2FB44B;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.float-whatsapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
 }
 
 .float-call {
@@ -389,6 +399,13 @@ body {
 
 .whatsapp-btn {
   background-color: var(--green);
+}
+
+.whatsapp-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0 !important;
+  flex-shrink: 0;
 }
 
 .call-btn {
