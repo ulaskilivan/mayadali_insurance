@@ -74,6 +74,38 @@ document.addEventListener("DOMContentLoaded", () => {
     counters.forEach((counter) => counterObserver.observe(counter));
   }
 
+  const typingTarget = document.querySelector("[data-typing-target]");
+  if (typingTarget) {
+    const fullText = typingTarget.getAttribute("data-typing-text") || "";
+    let idx = 0;
+    let started = false;
+    const typeNext = () => {
+      if (idx > fullText.length) return;
+      typingTarget.textContent = fullText.slice(0, idx);
+      idx += 1;
+      setTimeout(typeNext, 65);
+    };
+
+    const startTyping = () => {
+      if (started) return;
+      started = true;
+      typeNext();
+    };
+
+    if ("IntersectionObserver" in window) {
+      const typingObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          startTyping();
+          obs.unobserve(entry.target);
+        });
+      }, { threshold: 0.45 });
+      typingObserver.observe(typingTarget);
+    } else {
+      startTyping();
+    }
+  }
+
   const handleScroll = () => {
     if (!navbar) return;
     if (window.scrollY > 12) navbar.classList.add("scrolled");
