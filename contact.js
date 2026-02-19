@@ -71,6 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const productLabels = {
     trafik: "Trafik Sigortasi",
     kasko: "Kasko Sigortasi",
+    imm: "Ihtiyari Mali Mesuliyet (IMM)",
+    "koltuk-ferdi-kaza": "Koltuk Ferdi Kaza Sigortasi",
+    asistans: "Asistans Hizmeti",
     "tamamlayici-saglik": "Tamamlayici Saglik Sigortasi",
     dask: "DASK",
     konut: "Konut Sigortasi",
